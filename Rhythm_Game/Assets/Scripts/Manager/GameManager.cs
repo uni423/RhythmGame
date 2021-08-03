@@ -10,10 +10,13 @@ public class GameManager : Singleton<GameManager>
 
     public bool IsGamePlay = false;
 
-    public int score = 0;
-    public int DeadMonsters = 0;
+    public int WH = 5;
+    public int Bpm = 100;
 
-    public void Ingame_Init()
+    public int score = 0;
+
+    //public void Ingame_Init()
+    public void Init()
     {
         Debug.Log("GameManager Init Start");
 

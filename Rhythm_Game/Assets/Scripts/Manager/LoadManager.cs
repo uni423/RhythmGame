@@ -11,10 +11,7 @@ public class LoadManager : MonoBehaviour
     public enum Scene
     {
         Title,
-        Ingame,
-        Story,
-        Boss,
-        Load
+        Ingame
     }
 
     static Action onLoaderCallback;
@@ -42,9 +39,6 @@ public class LoadManager : MonoBehaviour
                 break;
             case Scene.Ingame :
                 asyncOperation = SceneManager.LoadSceneAsync("02_Ingame");
-                break;
-            case Scene.Boss :
-                asyncOperation = SceneManager.LoadSceneAsync("02_Ingame_1-Boss");
                 break;
         }
 
