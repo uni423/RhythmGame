@@ -21,6 +21,6 @@ public class NodeManager : MonoBehaviour
             }
         }
 
-        Nodes.transform.position = new Vector3(wh * -100 + 50, wh * 100 - 50);
+        Nodes.transform.position = new Vector3((wh * -100) / 2 + 50, (wh * 100) / 2 - 50);
     }
 }
