@@ -7,7 +7,7 @@ public class NodeManager : MonoBehaviour
     public GameObject Nodes;
     public GameObject node;
 
-    void Start()
+    public void Init()
     {
         int wh = GameManager.Instance.WH;
         GameObject obj;
